@@ -1,0 +1,19 @@
+beratemas1 = 25
+E1 = 650000
+F1 = 685000
+
+# keuntungan gerald => harga sebelum - harga sesudah
+
+lbuang1 = int(beratemas1 * F1 - beratemas1 * E1)
+P1 = float((lbuang1 * 100) / (beratemas1 * E1))
+print(f"Emas milik Gerald = {beratemas1} gram\nKeuntungan pertama Gerald (Nominal) = {lbuang1}\nPersentase Keuntungan pertama Gerald = {P1}%\n")
+
+bs = 15
+beratemas2 = beratemas1 + bs
+E2 = 685000
+F2 = 715000
+
+lbuang2 = int((beratemas2 * F2) - (beratemas1 * E1) - (bs * E2))
+P2 = float((lbuang2 * 100) / ((beratemas1 * E1) + (bs * E2)))
+
+print(f"Emas milik Gerald = {beratemas2} gram\nKeuntungan kedua Gerald (Nominal) >> {lbuang2}\nKeuntungan kedua Gerald (Persentase) = {P2}%")
