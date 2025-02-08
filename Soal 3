@@ -1,0 +1,11 @@
+ua = 200000000
+ba = 10
+a = ua
+tn = 0
+
+while a <= 400000000:
+    tn = tn + 1
+    a = float(a * ((100 + ba) / 100))
+
+b = float(round(a))
+print(f"Perlu waktu {tn} tahun untuk merubah Rp. 200000000 menjadi Rp {b}")
